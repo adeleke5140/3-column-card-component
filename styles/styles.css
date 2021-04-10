@@ -43,7 +43,7 @@ body{
 }
 
 .card > * + * {
-	margin-bottom: 1.6rem
+	margin-bottom: 1.7rem
 }
 
 .card__1{
@@ -75,7 +75,7 @@ body{
 .card__button{
 	background:var(--neutral-color);
 	border:none;
-	padding: 1rem 1.2rem;
+	padding: 1.2rem 1.8rem;
 	border-radius: 30px;
 	font-weight: var(--fw-bolder);
 	font-size: 1.1rem;
