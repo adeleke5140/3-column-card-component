@@ -11,13 +11,16 @@
 
 	--paragraph-color: hsla(0, 0%, 100%, 0.75);
 	--neutral-color: hsl(0, 0%, 95%);
+
+	--font-family1:'Lexend Deca', sans-serif;
+	--font-family2:'Big Shoulders Display', cursive;
 	--fw-normal: 400;
 	--fw-bolder:700;
 }
 
 body{
 	font-size: 15px;
-	font-family: 
+	font-family: var(--font-family1);
 }
 
 
