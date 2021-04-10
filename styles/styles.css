@@ -94,12 +94,25 @@ body{
 }
 
 .card__image{
-	transition: transform 500ms ease;
+	/*transition: transform 500ms ease;*/
+	animation: car-animation 2000ms 2s ease-in;
 }
 
-.card__image:active{
+/*.card__image:active{
 	transform:translateX(50px);
+}*/
+
+@keyframes car-animation{
+	0%{
+		transform: translateX(0px);
+	}
+
+	50%{
+		transform: translateX(50px);
+	}
+
+	100%{
+		transform: translateX(100px);
+	}
 }
-
-
 
