@@ -93,15 +93,13 @@ body{
 	color: var(--box-color3);
 }
 
-@media (pointer: coarse){
 .card__image{
 	transition: transform 500ms ease;
 }
 
-.card__image:active, .card__image:click{
-	transform:translateX(20px);
+.card__image:active{
+	transform:translateX(50px);
 }
 
-}
 
 
