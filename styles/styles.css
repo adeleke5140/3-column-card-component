@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 }
 
-::root{
+:root{
 	--box-color1: hsl(31, 77%, 52%);
 	--box-color2: hsl(184, 100%, 22%);
 	--box-color3: hsl(179, 100%, 13%);
@@ -30,4 +30,66 @@ body{
 	justify-content: center;
 	flex-direction: column;
 	padding: 4rem 2rem;
+	background: var(--neutral-color);
 }
+
+.card{
+	padding: 3rem 2rem;
+	text-align: left;
+}
+
+.card > * {
+	margin-bottom: 2rem;
+}
+
+.card > * + * {
+	margin-bottom: 1.6rem
+}
+
+.card__1{
+	background: var(--box-color1);
+}
+
+.card__2{
+	background-color: var(--box-color2);
+}
+
+.card__3{
+	background-color: var(--box-color3);
+}
+
+.card__heading{
+	font-family: var(--font-family2);
+	color: var(--neutral-color);
+	font-size: 3rem;
+	font-weight: var(--fw-bolder);
+	text-transform: uppercase;
+}
+
+.card__summary{
+	color: var(--paragraph-color);
+	font-weight: var(--fw-normal);
+	font-size: 1.2rem;
+}
+
+.card__button{
+	background:var(--neutral-color);
+	border:none;
+	padding: 1rem 1.2rem;
+	border-radius: 30px;
+	font-weight: var(--fw-bolder);
+	font-size: 1.1rem;
+}
+
+.card__1 .card__button{
+	color: var(--box-color1);
+}
+
+.card__2 .card__button{
+	color:var(--box-color2);
+}
+
+.card__3 .card__button{
+	color: var(--box-color3);
+}
+
