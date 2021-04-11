@@ -58,12 +58,26 @@ for tablet and desktop devices*/
 	border-top-right-radius: var(--border-radius);
 }
 
+@media (min-width: 767px){
+	.card__1{
+		border-top-right-radius: 0;
+		border-bottom-left-radius: var(--border-radius);
+	}
+}
+
 .card__2{ background-color: var(--box-color2); }
 
 .card__3{
 	background-color: var(--box-color3);
 	border-bottom-right-radius: var(--border-radius);
 	border-bottom-left-radius: var(--border-radius);
+}
+
+@media(min-width: 767px){
+	.card__3{
+		border-bottom-left-radius: 0;
+		border-top-right-radius: var(--border-radius);
+	}
 }
 
 .card__heading{
