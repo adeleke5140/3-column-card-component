@@ -16,6 +16,7 @@
 	--font-family2:'Big Shoulders Display', cursive;
 	--fw-normal: 400;
 	--fw-bolder:700;
+	--border-radius: 12px;
 }
 
 body{
@@ -32,30 +33,36 @@ body{
 	padding: 4rem 2rem;
 	background: var(--neutral-color);
 }
+/*
+for tablet and desktop devices*/
+
+@media screen and(min-width: 767px){
+	.container{
+		display: red;
+	}
+}
 
 .card{
 	padding: 3rem 2rem;
 	text-align: left;
 }
 
-.card > * {
-	margin-bottom: 2rem;
-}
+.card > * { margin-bottom: 2rem; }
 
-.card > * + * {
-	margin-bottom: 1.7rem
-}
+.card > * + * { margin-bottom: 1.7rem; } 
 
 .card__1{
 	background: var(--box-color1);
+	border-top-left-radius: var(--border-radius);
+	border-top-right-radius: var(--border-radius);
 }
 
-.card__2{
-	background-color: var(--box-color2);
-}
+.card__2{ background-color: var(--box-color2); }
 
 .card__3{
 	background-color: var(--box-color3);
+	border-bottom-right-radius: var(--border-radius);
+	border-bottom-left-radius: var(--border-radius);
 }
 
 .card__heading{
@@ -93,14 +100,7 @@ body{
 	color: var(--box-color3);
 }
 
-.card__image{
-	/*transition: transform 500ms ease;*/
-	animation: car-animation 2000ms 2s ease-in;
-}
-
-/*.card__image:active{
-	transform:translateX(50px);
-}*/
+.card__image{ animation: car-animation 2000ms 2s ease-in;}
 
 @keyframes car-animation{
 	0%{
