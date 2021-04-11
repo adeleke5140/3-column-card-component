@@ -16,7 +16,7 @@
 	--font-family2:'Big Shoulders Display', cursive;
 	--fw-normal: 400;
 	--fw-bolder:700;
-	--border-radius: 12px;
+	--border-radius: 10px;
 }
 
 body{
@@ -39,7 +39,7 @@ for tablet and desktop devices*/
 
 @media (min-width: 767px){
 	.container{
-		display: red;
+		flex-direction: row;
 	}
 }
 
