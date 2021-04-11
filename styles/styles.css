@@ -23,6 +23,7 @@ body{
 	font-size: 15px;
 	font-family: var(--font-family1);
 	max-width:1920px;
+	background: var(--neutral-color);
 }
 
 
@@ -32,7 +33,6 @@ body{
 	justify-content: center;
 	flex-direction: column;
 	padding: 4rem 2rem;
-	background: var(--neutral-color);
 }
 /*
 for tablet and desktop devices*/
