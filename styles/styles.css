@@ -22,6 +22,7 @@
 body{
 	font-size: 15px;
 	font-family: var(--font-family1);
+	max-width:1920px;
 }
 
 
@@ -36,7 +37,7 @@ body{
 /*
 for tablet and desktop devices*/
 
-@media screen and(min-width: 767px){
+@media (min-width: 767px){
 	.container{
 		display: red;
 	}
