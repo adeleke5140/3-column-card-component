@@ -127,7 +127,8 @@ for tablet and desktop devices*/
 		cursor: pointer;
 		background: none;
 		color: var(--neutral-color);
-		border: 1px solid var(--neutral-color);
+		/*border: 1px solid var(--neutral-color);*/
+		box-shadow: inset 0px 0px 0px 2px var(--neutral-color);
 	}
 }
 
