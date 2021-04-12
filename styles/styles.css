@@ -39,13 +39,25 @@ for tablet and desktop devices*/
 
 @media (min-width: 767px){
 	.container{
-		flex-direction: row;
+		/*flex-direction: row;
+		padding: 6rem 6rem;*/
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: auto;
+		height: 100%;
+
 	}
 }
 
 .card{
 	padding: 3rem 2rem;
 	text-align: left;
+}
+
+@media (min-width: 767px){
+	.card{
+		padding: 3rem 3rem;
+	}
 }
 
 .card > * { margin-bottom: 2rem; }
@@ -101,6 +113,22 @@ for tablet and desktop devices*/
 	border-radius: 30px;
 	font-weight: var(--fw-bolder);
 	font-size: 1.1rem;
+}
+
+@media(min-width: 767px){
+
+	.card{
+		overflow: hidden;
+	}
+	.card .card__button{
+		margin-top: 3rem;
+	}
+	.card .card__button:hover{
+		cursor: pointer;
+		background: none;
+		color: var(--neutral-color);
+		border: 1px solid var(--neutral-color);
+	}
 }
 
 .card__1 .card__button{
